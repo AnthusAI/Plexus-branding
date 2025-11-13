@@ -2,7 +2,7 @@
 
 This is an example brand configuration for the Plexus white-labeling system.
 
-![ACME Branding](ACME%20branding.png)
+![ACME Branding](../images/acme-branding.png)
 
 ## Brand Overview
 
@@ -31,13 +31,10 @@ The logo uses a professional blue background (`#4a90e2`) with white text.
 ### `styles.css`
 CSS variable overrides that remap the Radix color system:
 - Primary (blue) → indigo (more conservative professional blue)
-- Secondary (plum/pink) → orange (warm professional accent)
-- Accent (violet) → indigo (consistent with primary)
+- Secondary (plum/pink) → amber (warm golden accent)
+- Accent (violet) → cyan (fresh, modern accent)
 
-This creates a classic blue/orange professional palette while maintaining proper light/dark mode contrast.
-
-### `ACME branding.png`
-Visual reference showing the final branded appearance.
+This creates a professional indigo/amber/cyan palette while maintaining proper light/dark mode contrast.
 
 ## Usage
 
