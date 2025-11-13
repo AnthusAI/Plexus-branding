@@ -1,9 +1,12 @@
 // Example custom logo component
-// This is a simple ES module that exports a React component
+// Plain JavaScript (no JSX) - works directly in the browser
+
+import React from 'https://esm.sh/react@18';
 
 export default function CustomLogo({ variant, className }) {
-  return (
-    <div className={className} style={{ 
+  return React.createElement('div', {
+    className: className,
+    style: { 
       display: 'flex', 
       alignItems: 'center', 
       justifyContent: 'center',
@@ -14,9 +17,6 @@ export default function CustomLogo({ variant, className }) {
       fontWeight: 'bold',
       fontSize: '1.5em',
       borderRadius: '8px'
-    }}>
-      ACME
-    </div>
-  );
+    }
+  }, 'ACME');
 }
-
