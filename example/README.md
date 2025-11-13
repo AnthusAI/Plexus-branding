@@ -2,6 +2,8 @@
 
 This is an example brand configuration for the Plexus white-labeling system.
 
+![ACME Branding](ACME%20branding.png)
+
 ## Brand Overview
 
 **ACME AI Lab** demonstrates a professional, conservative Midwest-style branding with:
