@@ -1,0 +1,15 @@
+/**
+ * Example brand CSS variable overrides
+ * This file demonstrates how to customize the Plexus dashboard colors
+ */
+
+:root {
+  /* Override primary color to a bright orange for testing */
+  --primary: 25 95% 53%;
+}
+
+.dark {
+  /* Override primary color in dark mode */
+  --primary: 25 95% 58%;
+}
+

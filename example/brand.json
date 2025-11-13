@@ -1,0 +1,10 @@
+{
+  "name": "Example Brand",
+  "logo": {
+    "componentPath": "/brands/example/logo.js"
+  },
+  "styles": {
+    "cssPath": "/brands/example/styles.css"
+  }
+}
+
