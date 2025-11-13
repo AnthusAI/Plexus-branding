@@ -1,15 +1,80 @@
 /**
- * Example brand CSS variable overrides
- * This file demonstrates how to customize the Plexus dashboard colors
+ * ACME Brand CSS Variable Overrides
+ * Conservative, Midwest-friendly color palette
+ * 
+ * Strategy: Map the vibrant Radix colors to more conservative alternatives
+ * by aliasing them to other Radix color scales that are already imported.
+ * 
+ * - blue (primary) -> indigo (muted professional blue)
+ * - plum (secondary) -> amber (warm golden amber, distinct from primary)
+ * - violet (accent) -> cyan (fresh, modern cyan accent)
+ * - pink (secondary accent) -> amber (consistent with secondary)
+ * 
+ * This creates a professional indigo/amber/cyan palette.
+ * Note: Green is reserved for success/true, red for error/false.
  */
 
-:root {
-  /* Override primary color to a bright orange for testing */
-  --primary: 25 95% 53%;
+:root, .light, .light-theme {
+  /* Map blue to indigo for a more conservative primary color */
+  --blue-5: var(--indigo-5);
+  --blue-6: var(--indigo-6);
+  --blue-7: var(--indigo-7);
+  --blue-8: var(--indigo-8);
+  --blue-9: var(--indigo-9);
+  --blue-11: var(--indigo-11);
+  
+  /* Map plum to amber for a warm secondary color */
+  --plum-6: var(--amber-6);
+  --plum-7: var(--amber-7);
+  --plum-8: var(--amber-8);
+  --plum-9: var(--amber-9);
+  --plum-11: var(--amber-11);
+  
+  /* Map violet to cyan for fresh accent colors */
+  --violet-6: var(--cyan-6);
+  --violet-7: var(--cyan-7);
+  --violet-8: var(--cyan-8);
+  --violet-9: var(--cyan-9);
+  --violet-11: var(--cyan-11);
+  
+  /* Map pink to amber for consistent secondary accent */
+  --pink-5: var(--amber-5);
+  --pink-6: var(--amber-6);
+  --pink-7: var(--amber-7);
+  --pink-8: var(--amber-8);
+  --pink-9: var(--amber-9);
+  --pink-11: var(--amber-11);
 }
 
-.dark {
-  /* Override primary color in dark mode */
-  --primary: 25 95% 58%;
+.dark, .dark-theme {
+  /* Map blue to indigo for dark mode */
+  --blue-5: var(--indigo-5);
+  --blue-6: var(--indigo-6);
+  --blue-7: var(--indigo-7);
+  --blue-8: var(--indigo-8);
+  --blue-9: var(--indigo-9);
+  --blue-11: var(--indigo-11);
+  
+  /* Map plum to amber for dark mode */
+  --plum-6: var(--amber-6);
+  --plum-7: var(--amber-7);
+  --plum-8: var(--amber-8);
+  --plum-9: var(--amber-9);
+  --plum-11: var(--amber-11);
+  
+  /* Map violet to cyan for dark mode */
+  --violet-6: var(--cyan-6);
+  --violet-7: var(--cyan-7);
+  --violet-8: var(--cyan-8);
+  --violet-9: var(--cyan-9);
+  --violet-11: var(--cyan-11);
+  
+  /* Map pink to amber for dark mode */
+  --pink-5: var(--amber-5);
+  --pink-6: var(--amber-6);
+  --pink-7: var(--amber-7);
+  --pink-8: var(--amber-8);
+  --pink-9: var(--amber-9);
+  --pink-11: var(--amber-11);
 }
 
